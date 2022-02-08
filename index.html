@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='author' content='Domesday'>
+    <meta name='description' content='description'>
+    <title>titre</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;900&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .leftPart {
+            color: rgba(255, 255, 255, 1);
+            background-color: rgba(32, 27, 45, 1);
+            display: flex;
+            justify-content: space-between;
+           
+            flex-direction: column;
+            padding: 2rem;
+           
+        }
+
+        .rightPart {
+            height: 100vh;
+
+        }
+
+        .container {
+            display: flex;
+           
+            flex-direction: column;
+            width: 100vw;
+        }
+
+        .leftPart_title {
+            font-family: 'Spartan', sans-serif;
+            font-weight: 900;
+            font-size: 3rem;
+        }
+
+        .leftPart_citation {
+            border-left: 8px rgba(255, 255, 255, 1) solid;
+            padding-left: 1rem;
+            width: 488px;
+            font-size: 1rem;
+            font-family: 'Spartan', sans-serif;
+            font-weight: 500;
+        }
+
+        .leftPart_short {
+            font-family: 'Spartan', sans-serif;
+            font-weight: 900;
+        }
+
+        .leftPart_credit {
+            color:
+                rgba(194, 199, 218, 1);
+        }
+        .downPart{
+            display: flex;
+            flex-direction: column;
+        }
+        figcaption{
+            color:
+                rgba(194, 199, 218, 1);
+        }
+        @media (min-width:576px) {
+            .container{
+                flex-direction: row ;
+            }
+            .leftPart_citation {
+                width:304,12px;
+            }
+            .leftPart{
+                width: 30%;
+            }
+        
+           
+            
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <section class="leftPart">
+            <h5 class="leftPart_short">space.git</h5>
+            <section>
+                <h1 class="leftPart_title">Space is huge and beautiful</h1>
+                <figure class="leftPart_citation">
+
+                    <p>If you get asteroids about a kilometer in size, those are large enough and carry enough energy
+                        into
+                        our system to disrupt transportation, communication, the food chains, and that can be a really
+                        bad
+                        day on Earth.</p>
+                    <figcaption>Neil deGrasse Tyson</figcaption>
+                </figure>
+            </section>
+            <section class="downPart">
+                <span class="leftPart_credit">Photo by @nasa on Unsplash</span>
+                <span>Domesdady</span>
+            </section>
+        </section>
+        <img src="nasa-image.jpg" class="rightPart">
+
+    </main>
+</body>
+
+</html>
